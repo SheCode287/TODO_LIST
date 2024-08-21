@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/style.css" />
+    <script src="./js/main.js" type="module"></script>
+    <title>TODO_LIST</title>
+  </head>
+  <body>
+    <!-- Semantic elements e.g main -->
+
+    <main>
+      <section class="newItemEntry">
+        <form id="itemEntryForm">
+          <!-- a form has a label and input field -->
+          <!-- The for attribute in label specifies the id attribute value in its relative input -->
+          <label for="newItem"></label>
+          <!-- autocomplete attribute gives users suggested input -->
+          <!-- tabindex value is either negative, positive or zero and determines if the one can access the element via keyboard -->
+          <input
+            id="newItem"
+            type="text"
+            size="40"
+            aria-autocomplete="off"
+            placeholder="Add Item"
+            tabindex="0"
+          />
+          <!-- ariallabel gives screen reader a descr of what a button does esp if the btn is not descriptive -->
+          <!-- Tittle is what pops up as you mouse over the button  -->
+          <button
+            id="addItem"
+            class="button"
+            title="Add new Item"
+            aria-label="Add new to item to list "
+            tabindex="0"
+            type="submit"
+          >
+            +
+          </button>
+        </form>
+      </section>
+
+      <section class="listContainer">
+        <div class="listTitle">
+          <h1>To Do List</h1>
+          <button
+            id="clearItems"
+            class="button"
+            title="Clear the list"
+            aria-label="Remove All items from the list"
+            tabindex="0"
+          >
+            Clear
+          </button>
+        </div>
+        <hr />
+        <div id="listItems">
+          <!-- <div class="item">
+                    <input type="checkbox" id="1" tabindex="0">
+                    <label for="1">Eat</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="2" tabindex="0">
+                    <label for="2">Sleep</label>
+                </div> -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
